@@ -7,7 +7,7 @@ on:
 
 jobs:
   Publish:
-    name: Publish Next to npm
+    name: Publish Next
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Project
@@ -26,13 +26,13 @@ jobs:
         run: yarn --immutable
       - name: Install Dependencies
         run: yarn bump --preid "next.$(git rev-parse --verify --short HEAD)"
-      - name: Bump Version & Publish
+      - name: Publish to NPM
         run: |
           yarn config set npmAuthToken ${NODE_AUTH_TOKEN}
           yarn config set npmPublishRegistry "https://registry.yarnpkg.com"
-          # yarn npm publish --tag next
+          yarn npm publish --tag next
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_PUBLISH_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
       - name: Publish to GitHub
         run: |
           yarn config set npmAuthToken ${NODE_AUTH_TOKEN}
