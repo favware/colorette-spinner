@@ -1,0 +1,16 @@
+{
+  "extends": "../tsconfig.base.json",
+  "compilerOptions": {
+    "noEmit": true,
+    "incremental": false,
+    "baseUrl": ".",
+    "types": ["vitest/globals"]
+  },
+  "references": [
+    {
+      "path": "../src"
+    }
+  ],
+  "include": ["."],
+  "exclude": ["../dist/**/*"]
+}

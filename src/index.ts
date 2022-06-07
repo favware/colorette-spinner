@@ -86,7 +86,7 @@ export class Spinner implements ISpinner {
 
   public start(opts: Parameters<ISpinner['start']>[0] = {}) {
     this.#timer && this.reset();
-    return this.update({ text: opts.text, color: opts.color }).loop();
+    return this.update({ text: opts.text ?? this.#text, color: opts.color ?? this.#color }).loop();
   }
 
   public stop(opts: Parameters<ISpinner['stop']>[0] = {}) {
@@ -155,7 +155,7 @@ export class Spinner implements ISpinner {
   }
 }
 
-interface SpinnerOptions {
+export interface SpinnerOptions {
   stream?: NodeJS.WriteStream;
   frames?: string[];
   interval?: number;
@@ -163,7 +163,7 @@ interface SpinnerOptions {
   color?: keyof colorette.Colorette;
 }
 
-interface ISpinner {
+export interface ISpinner {
   clear(): Spinner;
   error(opts?: { text?: string; mark?: string }): Spinner;
   reset(): Spinner;
