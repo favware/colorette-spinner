@@ -6,10 +6,7 @@ export default defineConfig({
     coverage: {
       enabled: true,
       reporter: ['text', 'lcov', 'clover'],
-      exclude: ['**/tests'],
-      lines: 90,
-      functions: 100,
-      branches: 60
+      exclude: ['**/tests']
     }
   }
 });
