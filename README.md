@@ -9,6 +9,8 @@
 
 [![Support Server](https://discord.com/api/guilds/512303595966824458/embed.png?style=banner2)](https://join.favware.tech)
 
+![](./assets/demo.gif)
+
 </div>
 
 ## Description
