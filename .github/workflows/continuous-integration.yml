@@ -30,6 +30,7 @@ jobs:
     name: Testing with node v${{ matrix.node }}
     runs-on: ubuntu-latest
     strategy:
+      fail-fast: false
       matrix:
         node: [14, 16, 18]
     steps:
@@ -56,6 +57,7 @@ jobs:
     name: Compile source code Node v${{ matrix.node }}
     runs-on: ubuntu-latest
     strategy:
+      fail-fast: false
       matrix:
         node: [14, 16, 18]
     steps:
