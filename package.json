@@ -1,6 +1,6 @@
 {
   "name": "@favware/colorette-spinner",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A super tiny and efficient terminal spinner based on nanospinner",
   "author": "favna",
   "license": "MIT",

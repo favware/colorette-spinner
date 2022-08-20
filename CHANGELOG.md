@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+# [@favware/colorette-spinner@1.0.1](https://github.com/favware/colorette-spinner/compare/@favware/colorette-spinner@1.0.0...@favware/colorette-spinner@1.0.1) - (2022-08-20)
+
+## 📝 Documentation
+
+- **readme:** Add gif demo ([ef52252](https://github.com/favware/colorette-spinner/commit/ef52252e9dea6a24e2d9dd251acc7cd89391dc06))
+
 # [@favware/colorette-spinner@1.0.0]
 (https://github.com/favware/colorette-spinner/tree/@favware/colorette-spinner@1.0.0) - (2022-06-07)
 
