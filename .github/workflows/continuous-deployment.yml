@@ -24,6 +24,8 @@ jobs:
           registry-url: https://registry.yarnpkg.com/
       - name: Install Dependencies
         run: yarn --immutable
+      - name: Build Code
+        run: yarn build
       - name: Bump version
         run: yarn bump --preid "next.$(git rev-parse --verify --short HEAD)"
       - name: Publish to NPM
