@@ -1,3 +1,8 @@
 name: colorette-spinner
-org: favware
 packagePath: .
+org: favware
+identifierBase: false
+pushTag: true
+githubRelease: true
+githubReleaseLatest: true
+githubRepo: auto
