@@ -24,7 +24,9 @@ jobs:
           registry-url: https://registry.yarnpkg.com/
       - name: Install Dependencies
         run: yarn --immutable
-      - name: Bump Version & Publish
+      - name: Build code
+        run: yarn build
+      - name: Bump Version
         run: yarn bump --preid "next.$(git rev-parse --verify --short HEAD)" --skip-changelog
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
