@@ -42,17 +42,17 @@
     "@types/node": "^22.10.1",
     "@typescript-eslint/eslint-plugin": "^7.13.1",
     "@typescript-eslint/parser": "^7.13.1",
-    "@vitest/coverage-v8": "^2.1.6",
+    "@vitest/coverage-v8": "^2.1.8",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.57.1",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.2.1",
     "lint-staged": "^15.2.10",
-    "prettier": "^3.4.1",
+    "prettier": "^3.4.2",
     "tsup": "^8.3.5",
     "typescript": "^5.5.2",
-    "vite": "^6.0.1",
-    "vitest": "^2.1.6"
+    "vite": "^6.0.3",
+    "vitest": "^2.1.8"
   },
   "resolutions": {
     "acorn": "^8.14.0",
