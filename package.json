@@ -33,7 +33,7 @@
     "colorette": "*"
   },
   "devDependencies": {
-    "@commitlint/cli": "^19.6.0",
+    "@commitlint/cli": "^19.6.1",
     "@commitlint/config-conventional": "^19.6.0",
     "@favware/cliff-jumper": "^5.0.0",
     "@sapphire/eslint-config": "^5.0.5",
@@ -51,7 +51,7 @@
     "prettier": "^3.4.2",
     "tsup": "^8.3.5",
     "typescript": "^5.5.2",
-    "vite": "^6.0.3",
+    "vite": "^6.0.5",
     "vitest": "^2.1.8"
   },
   "resolutions": {
