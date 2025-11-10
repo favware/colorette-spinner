@@ -48,7 +48,7 @@ jobs:
         run: yarn test
       - name: Store code coverage report
         if: ${{ matrix.node == '18' }}
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: coverage
           path: coverage/
@@ -86,7 +86,7 @@ jobs:
         with:
           fetch-depth: 2
       - name: Download Coverage report
-        uses: actions/download-artifact@v5
+        uses: actions/download-artifact@v6
         with:
           name: coverage
           path: coverage/
